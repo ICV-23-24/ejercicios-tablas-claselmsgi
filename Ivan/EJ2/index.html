@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
     <style>
-
+        table, tr, th, td {
+            border: 1px solid silver;
+            border-collapse: collapse;
+            padding: 2px;
+        }
+        caption {
+            text-align: left;
+        }
+        .total {
+            text-align: center;
+            font-weight: bold ;
+        }
     </style>
 </head>
 <body>
-    <h1>Su pedido</h1>
     <table>
+    <caption><h1>Su pedido</h1></caption>
     <tr>
         <th>Nombre producto</th>
         <th>Precio unitario</th>
@@ -36,10 +47,10 @@
         <td>12.99</td>
     </tr>
     <tr>
-        <td>TOTAL</td>
+        <td class="total">TOTAL</td>
         <td>-</td>
         <td>7</td>
-        <td>207.51</td>
+        <td><b>207.51</b></td>
     </tr>
     </table>
 </body>
