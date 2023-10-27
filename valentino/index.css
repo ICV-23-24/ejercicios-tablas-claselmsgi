@@ -99,6 +99,16 @@ body
 {
     margin-bottom: 5%;
 }
+.container .card4 .content h3
+{
+    margin-bottom: 5%;
+    transform: translateY(-50%);
+}
+.container .card5 .content h3
+{
+    margin-bottom: 5%;
+    transform: translateY(-50%);
+}
 .container .card .content
 {
     padding: 20px;
@@ -136,7 +146,10 @@ body
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
+.container .card .content .box table td:hover
+{
+    background-color: rgba(0, 0, 0, 0.24);
+}
 .container .card .content .box .tabla1
 {
     color: #fff;
@@ -228,4 +241,34 @@ body
         width: 80%;
         border-radius: 20px;
         border: solid 1px white;
+    }
+    .container .card .content .box .tabla4
+    {
+      color: #fff;
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      margin-bottom: 3%;
+      column-count:2;
+    }
+    .container .card .content .box .tabla4 td
+    {
+      text-align: left;
+      border: solid 2px white;
+      padding: 1% 2%;
+    }
+    .container .card .content .box .tabla5
+    {
+      color: #fff;
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      margin-bottom: 3%;
+      column-count:2;
+    }
+    .container .card .content .box .tabla5 td
+    {
+      text-align: left;
+      border: solid 2px white;
+      padding: 1% 2%;
     }
