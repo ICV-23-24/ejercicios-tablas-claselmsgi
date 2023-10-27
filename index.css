@@ -24,6 +24,11 @@ body
     width: 80%;
     height: 80vh; /* 80% de la altura del viewport */
 }
+.container .card3.expanded
+{
+    width: 80%;
+    height: auto;
+}
 .container .card.expanded .content
 {
     width: 100%;
@@ -51,7 +56,7 @@ body
 {
     width: 40%;
     height: 40%;
-    border-radius: 30%;
+    border-radius: 20%;
     border: solid white 4px;
 }
 .container
@@ -82,6 +87,18 @@ body
     backdrop-filter: blur(50px);
     transition: 1s ease;
 }
+.container .card2
+{
+    height: 600px;
+}
+.container .card3
+{
+    height: 650px;
+}
+.container .card2 .content h3
+{
+    margin-bottom: 5%;
+}
 .container .card .content
 {
     padding: 20px;
@@ -93,8 +110,9 @@ body
 }
 .container .card .content img
 {
-    width: 0%;
-    height: 0%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
     transition: 1s ease;
 }
 .container .card .content h3
@@ -118,6 +136,7 @@ body
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .container .card .content .box .tabla1
 {
     color: #fff;
@@ -140,7 +159,7 @@ body
     padding: 5%;
     text-align: center;
   }
-  .container .card.expanded .content .box .tabla1 th
+  .container .card .content .box .tabla1 th
   {
     background-color: rgba(0, 0, 0, 0.24);
   }
@@ -149,14 +168,64 @@ body
     color: #fff;
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 3%;
   }
+  .container .card.expanded .content .box .tabla2
+{
+    margin-bottom: 0%;
+}
   .container .card .content .box .tabla2 td
   {
     text-align: left;
     border: solid 2px white;
+    padding: 3.5%;
   }
   .container .card .content .box .tabla2 th
   {
     border: solid 2px white;
-    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 1%;
   }
+  .container .card .content .box .tabla3
+  {
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 3%;
+  }
+  .container .card3 h3
+  {
+    margin-bottom: 3%;
+  }
+  .container .card.expanded .content .box .tabla3
+  {
+      margin-bottom: 5%;
+  }
+    .container .card .content .box .tabla3 td
+    {
+      text-align: left;
+      border: solid 2px white;
+      padding: 1% 2%;
+    }
+    .container .card .content .box .tabla3 th
+    {
+      border: solid 2px white;
+      background-color: rgba(0, 0, 0, 0.24);
+      padding: 1%;
+    }
+    .container .card.expanded .content .box .tabla3
+    {
+        width: 90%;
+    }   
+    .container .card3 .content .box .tabla3 tr td:first-child
+    {
+        width: 50%;
+        text-align: center;
+    }
+    .container .card.expanded .content .box .tabla3 img:hover
+    {
+        width: 80%;
+        border-radius: 20px;
+        border: solid 1px white;
+    }

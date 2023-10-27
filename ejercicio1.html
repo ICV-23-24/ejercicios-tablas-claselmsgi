@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libros</title>
+    <title>Tablas</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -39,7 +39,7 @@
                 <a href="#" class="read-more-link">Read More</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card card2  ">
             <div class="content">
                 <h3>Su pedido</h3>
                 <div class="box">
@@ -68,35 +68,41 @@
                             <td>1</td>
                             <td>12.99</td>
                         </tr>
+                        <tr>
+                            <td>TOTAL</td>
+                            <td></td>
+                            <td>7</td>
+                            <td>207.51</td>
+                        </tr>
                     </table>
                 </div>
                 <a href="#" class="read-more-link">Read More</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card card3">
             <div class="content">
-                <h3>Listado de cursos</h3>
+                <h3>Resultado de la búsqueda</h3>
                 <div class="box">
-                    <table>
+                    <table class="tabla3">
                         <tr>
-                            <th>Cursos</th>
-                            <th>Horas</th>
-                            <th>Horario</th>
+                            <th>Imagen</th>
+                            <th>Datos</th>
                         </tr>
                         <tr>
-                            <td>CSS</td>
-                            <td>20</td>
-                            <td>16:00 - 20:00</td>
+                            <td><img src="./img/laptop.jpg" alt=""></td>
+                            <td>Portátil</td>
                         </tr>
                         <tr>
-                            <td>HTML</td>
-                            <td>20</td>
-                            <td>16:00 - 20:00</td>
+                            <td><img src="./img/vidiocamera.jpg" alt=""></td>
+                            <td>Videocamera</td>
                         </tr>
                         <tr>
-                            <td>Dreamweaver</td>
-                            <td>60</td>
-                            <td>16:00 - 20:00</td>
+                            <td><img src="./img/televisor-upscaled.png" alt=""></td>
+                            <td>Televisor</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/smartphone.jpg" alt=""></td>
+                            <td>Smartphone</td>
                         </tr>
                     </table>
                 </div>
@@ -190,7 +196,7 @@
             });
         });
         VanillaTilt.init(document.querySelectorAll(".card"),{
-		max: 5,
+		max: 2,
 		speed: 1000,
         glare: false,
 	});
