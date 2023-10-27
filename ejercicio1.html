@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h3>Listado de cursos</h3>
+                <div class="box">
+                    <table class="tabla1">
+                        <tr>
+                            <th>Cursos</th>
+                            <th>Horas</th>
+                            <th>Horario</th>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dreamweaver</td>
+                            <td>60</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h3>Su pedido</h3>
+                <div class="box">
+                    <table class="tabla2">
+                        <tr>
+                            <th>Nombre del producto</th>
+                            <th>Precio</th>
+                            <th>Unidades</th>
+                            <th>Subtotal</th>
+                        </tr>
+                        <tr>
+                            <td>Reproductor MP3</td>
+                            <td>102.02</td>
+                            <td>1</td>
+                            <td>192.02</td>
+                        </tr>
+                        <tr>
+                            <td>Fundas de colres</td>
+                            <td>2.50</td>
+                            <td>5</td>
+                            <td>12.50</td>
+                        </tr>
+                        <tr>
+                            <td>Reproductor de radio</td>
+                            <td>12.99</td>
+                            <td>1</td>
+                            <td>12.99</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h3>Listado de cursos</h3>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th>Cursos</th>
+                            <th>Horas</th>
+                            <th>Horario</th>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dreamweaver</td>
+                            <td>60</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h3>Listado de cursos</h3>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th>Cursos</th>
+                            <th>Horas</th>
+                            <th>Horario</th>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dreamweaver</td>
+                            <td>60</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h3>Listado de cursos</h3>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th>Cursos</th>
+                            <th>Horas</th>
+                            <th>Horario</th>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dreamweaver</td>
+                            <td>60</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>  
+    <script>
+                // Obtén todos los enlaces "Read More"
+            const readMoreLinks = document.querySelectorAll(".read-more-link");
+
+        // Agrega un manejador de clic para cada enlace "Read More"
+        readMoreLinks.forEach(link => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault(); // Evita que el enlace navegue a otra página
+                const card = link.closest(".card"); // Encuentra el div .card más cercano al enlace
+                const readMoreIcon = link.querySelector(".read-more-icon");
+
+                // Verifica si la tarjeta está expandida
+                if (card.classList.contains("expanded")) {
+                    // Si la tarjeta está expandida, colapsarla
+                    card.classList.remove("expanded");
+                    link.textContent = "Read More";
+                } else {
+                    // Si la tarjeta no está expandida, expandirla
+                    card.classList.add("expanded");
+                    link.textContent = "Read Less";
+                }
+            });
+        });
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 5,
+		speed: 1000,
+        glare: false,
+	});
+    </script>
+</body>
+</html>

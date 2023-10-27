@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container .card.expanded {
+    width: 80%;
+    height: 80vh; /* 80% de la altura del viewport */
+}
+.container .card.expanded .content
+{
+    width: 100%;
+}
+
+.container .card.expanded .content .box
+{
+    display: flex;
+    flex-direction: row-reverse;   
+    align-items: center;
+    transform: translateY(10%);
+    width: 100%;
+}
+.container .card.expanded .content a
+{
+    margin-top: 8%;
+}
+
+.container .card.expanded .content h3
+{
+    transform: translateY(25%);
+    font-size: 50px;
+}
+.container .card.expanded .content img
+{
+    width: 40%;
+    height: 40%;
+    border-radius: 30%;
+    border: solid white 4px;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(50px);
+    transition: 1s ease;
+}
+.container .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 1s;
+    width: 100%;
+}
+.container .card .content img
+{
+    width: 0%;
+    height: 0%;
+    transition: 1s ease;
+}
+.container .card .content h3
+{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+
+}
+
+.container .card .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.container .card .content .box .tabla1
+{
+    color: #fff;
+    width: 100%;        
+    border-collapse: collapse;
+    margin-top: 5%;
+}
+.container .card.expanded .content .box .tabla1{  
+    border: 1px solid #ddd;
+    text-align: left;
+    margin-top: 0%;
+  }
+  
+  .container .card.expanded .content .box .tabla1 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .container .card.expanded .content .box .tabla1 th, td {
+    padding: 5%;
+    text-align: center;
+  }
+  .container .card.expanded .content .box .tabla1 th
+  {
+    background-color: rgba(0, 0, 0, 0.24);
+  }
+  .container .card .content .box .tabla2 
+  {
+    color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .container .card .content .box .tabla2 td
+  {
+    text-align: left;
+    border: solid 2px white;
+  }
+  .container .card .content .box .tabla2 th
+  {
+    border: solid 2px white;
+    padding: 2%;
+  }
