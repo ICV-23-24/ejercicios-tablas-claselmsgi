@@ -1,5 +1,5 @@
 <HEAD>
-    <TITLE> Ejemplo Columnas Fusionadas </TITLE>
+    <TITLE> Ejemplo Filas Fusionadas </TITLE>
     <style>
         h1{
             text-align: left;
@@ -16,26 +16,29 @@
     </style>
 </HEAD>
 <BODY>
-    <h1>Fusión de Columnas</h1>
+    <h1>Fusión de Filas</h1>
     <table>
         <!--<caption> <strong> Su Pedido </strong> </caption>-->
         <tr> 
-            <td colspan="3">A</td>
+            <td>A</td>
             <td>B</td>
+            <td rowspan="3">C</td>
+            <td>D</td>
         </tr>
         <tr>
-            <td>C</td>
-            <td colspan="2">D</td>
-            <td>E</td>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td rowspan="3">G</td>
+
         </tr>
         <tr>
-            <td colspan="4">F</td>
-        </tr>
-        <tr>
-            <td>G</td>
             <td>H</td>
+        </tr>
+        <tr>
             <td>I</td>
             <td>J</td>
+            <td>K</td>
+           
         </tr>
         <tr> 
             
